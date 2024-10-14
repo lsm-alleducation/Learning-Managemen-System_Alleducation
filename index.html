@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMS All Education - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      body {
+        background-color: #f5f5f5; /* Warna latar belakang halaman */
+        font-family: Arial, sans-serif;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #002b5c; /* Biru tua */
+        padding: 10px 20px;
+        color: white;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo-img {
+        width: 50px; /* Ukuran logo */
+        margin-right: 10px;
+      }
+      .menu {
+        display: flex;
+        gap: 15px;
+      }
+      .menu button {
+        background-color: #00aaff; /* Biru muda */
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .menu button:hover {
+        background-color: #008bb5; /* Warna biru tua saat hover */
+      }
+      main {
+        padding: 20px;
+      }
+      .marquee {
+        background-color: #00aaff; /* Biru muda untuk pengumuman */
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .image-carousel {
+        display: flex;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .image-carousel img {
+        width: 100%;
+        animation: slide 20s infinite;
+      }
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(-100%);
+        }
+        75% {
+          transform: translateX(-200%);
+        }
+        100% {
+          transform: translateX(-200%);
+        }
+      }
+      .clickable {
+        background-color: #e0ff00; /* Kuning kehijauan */
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s;
+      }
+      .clickable:hover {
+        background-color: #c0d600; /* Warna saat hover */
+      }
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #002b5c; /* Biru tua */
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo all education.jpeg" alt="Logo" class="logo-img" />
+        <h1>LMS All Education</h1>
+      </div>
+      <div class="menu">
+        <button onclick="window.location.href='login.html'">Log In</button>
+        <button onclick="window.location.href='reset_password.html'">
+          Reset Password
+        </button>
+        <button onclick="window.location.href='register.html'">Register</button>
+      </div>
+    </header>
+
+    <main>
+      <h2 style="color: #002b5c">Selamat Datang di LMS All Education!</h2>
+      <div class="marquee">
+        <p>
+          Pengumuman: Cek fitur baru kami yang tersedia untuk semua pengguna!
+        </p>
+      </div>
+
+      <div class="image-carousel">
+        <img src="istockphoto-1572128796-612x612.jpg" alt="Kegiatan 1" />
+        <img src="2.jpg" alt="Kegiatan 2" />
+        <img src="istockphoto-1298561645-612x612.jpg" alt="Kegiatan 3" />
+      </div>
+
+      <div class="clickable">Hubungi Kami untuk Informasi Lebih Lanjut.</div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 All Education. Hubungi kami info@alleducation.id.</p>
+    </footer>
+  </body>
+</html>
